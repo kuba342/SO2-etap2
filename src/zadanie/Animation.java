@@ -17,8 +17,7 @@ import javax.swing.WindowConstants;
  * 			
  *     Autor: Jakub Derda
  * nr albumu: 252819
- *      Data: 13.01.2021
- *Data zajęć: 11.01.2021
+ *      Data: 15.05.2022
  */
 
 public class Animation extends JPanel implements Runnable{

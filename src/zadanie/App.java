@@ -31,8 +31,7 @@ import javax.swing.JScrollPane;
  * 			
  *     Autor: Jakub Derda
  * nr albumu: 252819
- *      Data: 13.01.2021
- *Data zajęć: 11.01.2021
+ *      Data: 15.05.2022
  */
 
 public class App extends JFrame implements ActionListener {
@@ -43,7 +42,7 @@ public class App extends JFrame implements ActionListener {
 			"Program prezentujący przykładowe wykorzystanie wątków i działania współbieżnego" +
 			" - wersja okienkowa\n\n"+
 			"Autor: Jakub Derda\n" + 
-			"Data: 10.12.2020";
+			"Data: 15.05.2022";
 	
 	private static final int MIN_BUS_DELAY = 500;
     private static final int MAX_BUS_DELAY = 5000;
