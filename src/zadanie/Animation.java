@@ -10,15 +10,15 @@ import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
 /**
- *   Program: Program prezentuj¹cy przyk³adowe wykorzystanie w¹tków i dzia³ania wspó³bie¿nego
+ *   Program: Program prezentujÄ…cy przykÅ‚adowe wykorzystanie wÄ…tkÃ³w i dziaÅ‚ania wspÃ³Å‚bieÅ¼nego
  * 	    Plik: Animation.java
- * 			  Drugie okienko aplikacji, które jest tylko i wy³¹cznie
- * 			  implementacj¹ animacji do dzia³añ wykonywanych przez poszczególne w¹tki.
+ * 			  Drugie okienko aplikacji, ktÃ³re jest tylko i wyÅ‚Ä…cznie
+ * 			  implementacjÄ… animacji do dziaÅ‚aÅ„ wykonywanych przez poszczegÃ³lne wÄ…tki.
  * 			
  *     Autor: Jakub Derda
  * nr albumu: 252819
  *      Data: 13.01.2021
- *Data zajêæ: 11.01.2021
+ *Data zajÄ™Ä‡: 11.01.2021
  */
 
 public class Animation extends JPanel implements Runnable{

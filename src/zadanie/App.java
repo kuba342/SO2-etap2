@@ -22,17 +22,17 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 
 /**
- *   Program: Program prezentuj¹cy przyk³adowe wykorzystanie w¹tków i dzia³ania wspó³bie¿nego
+ *   Program: Program prezentujÄ…cy przykÅ‚adowe wykorzystanie wÄ…tkÃ³w i dziaÅ‚ania wspÃ³Å‚bieÅ¼nego
  * 	    Plik: App.java
- * 			  g³ówne okienko aplikacji, w którym wyœwietlane s¹ wszystkie 
- * 			  "logi" - komunikaty od poszczególnych busów.
- * 			  W tym oknie mo¿liwa jest zmiana natê¿enia ruchu oraz wyœwietlane
- * 			  s¹ numery busów w kolejce oraz bezpoœrednio na moœcie.
+ * 			  gÅ‚Ã³wne okienko aplikacji, w ktÃ³rym wyÅ›wietlane sÄ… wszystkie 
+ * 			  "logi" - komunikaty od poszczegÃ³lnych busÃ³w.
+ * 			  W tym oknie moÅ¼liwa jest zmiana natÄ™Å¼enia ruchu oraz wyÅ›wietlane
+ * 			  sÄ… numery busÃ³w w kolejce oraz bezpoÅ›rednio na moÅ›cie.
  * 			
  *     Autor: Jakub Derda
  * nr albumu: 252819
  *      Data: 13.01.2021
- *Data zajêæ: 11.01.2021
+ *Data zajÄ™Ä‡: 11.01.2021
  */
 
 public class App extends JFrame implements ActionListener {
@@ -40,7 +40,7 @@ public class App extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
 
 	private static final String GREETING_MESSAGE = 
-			"Program prezentuj¹cy przyk³adowe wykorzystanie w¹tków i dzia³ania wspó³bie¿nego" +
+			"Program prezentujÄ…cy przykÅ‚adowe wykorzystanie wÄ…tkÃ³w i dziaÅ‚ania wspÃ³Å‚bieÅ¼nego" +
 			" - wersja okienkowa\n\n"+
 			"Autor: Jakub Derda\n" + 
 			"Data: 10.12.2020";
@@ -59,13 +59,13 @@ public class App extends JFrame implements ActionListener {
 	
 	
 	//GUI
-	// Font dla etykiet o sta³ej szerokoœci znaków
+	// Font dla etykiet o staÅ‚ej szerokoÅ›ci znakÃ³w
 	Font font = new Font("MonoSpaced", Font.BOLD, 12);
 	
 	//ETYKIETY
 	JLabel trafficRestriction        = new JLabel("Ograniczenie ruchu:");
-	JLabel traffic                   = new JLabel("   Natê¿enie ruchu:");
-	JLabel onTheBridge               = new JLabel("         Na moœcie:");
+	JLabel traffic                   = new JLabel("   NatÄ™Å¼enie ruchu:");
+	JLabel onTheBridge               = new JLabel("         Na moÅ›cie:");
 	JLabel queue                     = new JLabel("           Kolejka:");
 	
 	//LISTA ROZWIJALNA
@@ -86,7 +86,7 @@ public class App extends JFrame implements ActionListener {
 	
 	//ELEMENTY MENU
 	JMenuItem menuAuthor		     = new JMenuItem("Informacje o autorze");
-	JMenuItem menuEnd		         = new JMenuItem("Zakoñcz");
+	JMenuItem menuEnd		         = new JMenuItem("ZakoÅ„cz");
 	
 	
 	//POLE Z KOMUNIKATAMI
@@ -135,8 +135,8 @@ public class App extends JFrame implements ActionListener {
 		slider.setPaintLabels(true);
 		
 		Hashtable<Integer, JLabel> labelTable = new Hashtable<Integer, JLabel>();
-        labelTable.put(MIN_BUS_DELAY, new JLabel("Ma³o"));
-        labelTable.put(MAX_BUS_DELAY, new JLabel("Du¿o"));
+        labelTable.put(MIN_BUS_DELAY, new JLabel("MaÅ‚o"));
+        labelTable.put(MAX_BUS_DELAY, new JLabel("DuÅ¼o"));
         slider.setLabelTable(labelTable);
         slider.addChangeListener(new ChangeListener() {
             @Override
@@ -289,7 +289,7 @@ public class App extends JFrame implements ActionListener {
         }
 		
 		bridge.busesOnTheBridge.add(bus);
-		printBridgeInfo(bus, "WJE¯D¯A NA MOST");
+		printBridgeInfo(bus, "WJEÅ»DÅ»A NA MOST");
 	}
 	
 	synchronized void getOffTheBridge(Bus bus) {
